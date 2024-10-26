@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Starbucks Coffee Website Replica</title>
+  <!-- <link rel="stylesheet" href="starbucks.css"> -->
+  <style>
+    
+  /* Custom properties */
+:root {
+  --starbucks-light: #006241;
+  --starbucks-dark: #004225;
+}
+
+/* Custem style sheet
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--starbucks-light);
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+ 
+  
+}
+
+.coffee-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--starbucks-dark);
+}
+
+span {
+  color: var(--starbucks-light);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--starbucks-dark);
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--starbucks-light);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+    
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--starbucks-dark);
+  color: white;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li {
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.copy-right {
+  font-size: 14px;
+  font-weight: 300;
+  background-color: aliceblue;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+.more-options{
+padding: 20px;
+
+}
+.content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      padding: 20px;
+    }
+
+    .card {
+      width: 20%;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 0 5px rgb(1, 86, 1);
+    
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .card h3 {
+      color: #000000;
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #666666;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #FFFFFF;
+      background-color: #006241;
+      padding: 10px;
+      margin: 10px 0;
+      
+    }
+
+    
+    .card a:hover {
+      background-color: #057b34;
+    }
+
+    
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-top: 1px solid #CCCCCC;
+      color: #666666;
+    }
+
+</style>
+</head>
+<body>
+  <header>
+    <header>   
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks Logo" class="logo"></a>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">select location</a></li>
+          <select name="city" id="id1">
+            <option value="Delhi">Delhi</option>
+            <option value="Gorakpur">Gorakpur</option>
+            <option value="New york">New york</option>
+            <option value="Dadri">Dadri</option>
+            <option value="VGI">VGI</option>
+            <option value="Chithrda">Chithera</option>
+        </select>
+        </ul>
+      </header>
+      
+  </header>
+  <main>
+    <main>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Cold-Brew-Latte_1.jpeg" class="coffee-img">
+            </div>
+            <div class="col">
+              <h2>Caramel Macchiato: <br>  <span>Starbucks</span></h2>
+              <p> This is one of Starbucks most popular espresso drinks. It's a sweet caramel drink made with a delicious vanilla syrup that is swirled into a rich and intense shot of espresso. The drink is then finished off with steamed milk and a beautiful whip of caramel drizzle.</p>
+              <a href="https://www.starbucks.in/dashboard" target="_blank" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <h2>Almond Milk Honey Flat White: <br> <span>Summer Collection</span></h2>
+              <p>This drink uses the classic espresso and almond milk (instead of dairy) and adds a touch of honey for sweetness, making it a perfect choice for those who are vegan or have lactose intolerance. With its creamy, nutty sweetness, this Flat White is sure to please coffee lovers of all kinds.</p>
+              <a href="https://www.starbucks.in/dashboard" target="_blank" class="btn">Shop Now</a>
+            </div>
+            <div class="col">
+              <img src="https://media1.popsugar-assets.com/files/thumbor/xNXk4966JLLo9VPK-cYp7p3dZDk/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2021/01/04/006/n/1922195/77d163d88e06f414_Honey_Almondmilk_Flat_White/i/Starbucks-New-Honey-Almond-Milk-Flat-White.jpg" alt="Coffee Image 2" class="coffee-img">
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <img src="https://hype.my/wp-content/uploads/2020/10/SBX20200824-FallPromo-Starbucks-Pumpkin-Spice-Latte.jpg" alt="Coffee Image 1" class="coffee-img">
+            </div>
+            <div class="col">
+              <h2>Pumpkin Spice Latte: <br> It's <span>Starbucks</span></h2>
+              <p> This drink is made with espresso, milk, and pumpkin spice sauce comprising classic fall flavors of pumpkin, cinnamon, nutmeg, and clove. The cup is topped off with whipped cream and real pumpkin pie spices.</p>
+              <a href="https://www.starbucks.in/dashboard" target="_blank" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <h2>Caffè Mocha: <br> <span>Summer Collection</span></h2>
+              <p> If you're a fan of coffee with a deep chocolate undertone, you may enjoy a cup of Caffe Mocha, which is essentially a lovechild of espresso and chocolate. The Starbucks Caffe Mocha is made with its signature intense, full-bodied, and caffeine-charged espresso, dark mocha sauce, and creamy milk. The cup is then topped off with sweetened whipped.</p>
+              <a href="https://www.starbucks.in/dashboard" target="_blank" class="btn">Shop Now</a>
+            </div>
+            <div class="col">
+              <img src="https://www.starbucks.co.th/stb-media/2020/08/41.Iced-Caffe-Mocha1080.png" alt="Coffee Image 2" class="coffee-img">
+            </div>
+          </div>
+        </div>
+        <div class="more-options">
+        <h2>Menu</h2>
+        <br>
+        <hr>
+        <br>
+      <h3>  Drinks</h3>
+        </div>
+        <div class="content">
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.8eUIvK0wtMyZnBrFEF7wCwHaHa?rs=1&pid=ImgDetMain" alt="option1"> <!-- You can change the image source here -->
+            <h3>Oleato™: </h3>
+            <p>Oleato™: A new line of plant-based beverages that are dairy-free, vegan, and delicious.</p>
+            <a href="https://www.starbucks.com/menu/drinks/oleato" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="option2"> <!-- You can change the image source here -->
+            <h3>Hot Coffees: </h3>
+            <p> Classic espresso drinks, brewed coffee, and seasonal favorites.</p>
+            <a href="https://www.starbucks.com/menu/drinks/hot-coffees" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://starbmag.com/wp-content/uploads/2022/05/img_627bee0761b15.png" alt="option3"> <!-- You can change the image source here -->
+            <h3>Hot Teas: </h3>
+            <p>Hot Teas: Teavana® tea lattes, brewed teas, and herbal infusions.</p>
+            <a href="https://www.starbucks.com/menu/drinks/hot-teas" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://brewthatcoffee.com/wp-content/uploads/2021/12/Whotchocolate-300x300.png" alt="option4"> <!-- You can change the image source here -->
+            <h3>Hot Drinks: </h3>
+            <p>Hot Drinks: Hot chocolate, chai, and other indulgent drinks.</p>
+            <a href="https://www.starbucks.com/menu/drinks/hot-drinks" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.8eUIvK0wtMyZnBrFEF7wCwHaHa?rs=1&pid=ImgDetMain" alt="option5"> <!-- You can change the image source here -->
+            <h3>Frappuccino® Blended Beverages: </h3>
+            <p>Frappuccino® Blended Beverages: Iced, blended drinks with coffee, cream, or fruit flavors.</p>
+            <a href="https://www.starbucks.com/menu/drinks/frappuccino-blended-beverages" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.8eUIvK0wtMyZnBrFEF7wCwHaHa?rs=1&pid=ImgDetMain" alt="option6"> <!-- You can change the image source here -->
+            <h3>Cold Coffees: </h3>
+            <p>Cold Coffees: Iced coffee, cold brew, nitro cold brew, and espresso drinks1.
+            </p>
+            <a href="https://www.starbucks.com/menu/drinks/cold-coffees" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.8eUIvK0wtMyZnBrFEF7wCwHaHa?rs=1&pid=ImgDetMain" alt="option7"> <!-- You can change the image source here -->
+            <h3>Iced Teas: </h3>
+            <p>Iced Teas: Teavana® iced tea shaken with fruit flavors or lemonade.</p>
+            <a href="https://www.starbucks.com/menu/drinks/iced-teas" target="_blank" class="btn">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.8eUIvK0wtMyZnBrFEF7wCwHaHa?rs=1&pid=ImgDetMain" alt="option8"> <!-- You can change the image source here -->
+            <h3>Cold Drinks: </h3>
+            <p>Cold Drinks: Refreshers, smoothies, and other cold beverages.</p>
+            <a href="https://www.starbucks.com/menu/drinks/cold-drinks" target="_blank" class="btn">Learn More</a>   
+          </div>
+
+        
+        <!-- You can add more sections and rows as you like -->
+      </main>
+      
+  </main>
+  <footer>
+    <footer>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <img src="https://cdn-icons-png.flaticon.com/128/5977/5977591.png" alt="Starbucks Logo" class="logo">
+            </div>
+            <div class="col">
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/" target="_main"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook Icon" ></a></li>
+                <li><a href="https://twitter.com/" target="_main"><img src="https://cdn-icons-png.flaticon.com/512/4494/4494477.png" alt="Twitter Icon" ></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram Icon" ></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col">
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="copy-right">© 2023 Adarsh pandey. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+  </footer>
+</body>
+</html>
